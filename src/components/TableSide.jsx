@@ -3,7 +3,7 @@ import { ScrollArea, ScrollBar } from "./ui/scroll-area"
 
 const TableSide = () => {
     return (
-        <ScrollArea className="max-h-[474px] whitespace-nowrap md:h-full md:w-full">
+        <ScrollArea className="md:max-h-[474px] whitespace-nowrap md:h-full md:w-full">
             <div className="bg-white dark:bg-darrk p-8 rounded-lg w-full border-[1px] space-y-3 hover:shadow-md border-[#DADDDD] dark:border-gray-300/20">
                 <div className="flex items-center justify-between pb-4">
                     <p className="font-bold text-sm md:text-medium text-[#26282C] dark:text-white">Top Platform</p>

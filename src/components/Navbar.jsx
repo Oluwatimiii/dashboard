@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   const navStyle = mobileNav
-    ? "md:hidden fixed left-0 top-0 w-full min-h-screen bg-black/80"
+    ? "md:hidden fixed left-0 bottom-0 bg-[#0D0D2B] top-0 w-full min-h-screen"
     : "";
 
 

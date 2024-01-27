@@ -11,7 +11,7 @@ import { Button } from "./ui/button";
 const datas = [
     {
         name: "Marcus Bergson",
-        amount: "$80000",
+        amount: "$80,000",
         image: Marcus,
         date: "Nov 15, 2023",
         status: "Paid"
@@ -69,28 +69,27 @@ const TableComponent = () => {
                                 <TableRow key={data.name}>
                                     <TableCell className="font-medium text-[12px] md:text-base text-[#3A3F51] dark:text-gray-300 flex items-center cursor-pointer hover:font-semibold gap-2 justify-start">
                                         <img src={data.image} />
-                                        <p>{data.name}</p>
+                                        <p className="text-[10px] pr-4 md:text-base sm:pr-0">{data.name}</p>
                                     </TableCell>
-                                    <TableCell className="text-[#737373] text-[12px] md:text-base">{data.date}</TableCell>
+                                    <TableCell className="text-[#737373] text-[11px] md:text-base">{data.date}</TableCell>
                                     <TableCell className="font-bold text-[11px] md:text-base">{data.amount}</TableCell>
                                     <TableCell className={`text-right text-[12px] md:text-base  font-semibold ${data.status === "Paid" ? "text-green-700" : "text-red-700"}`}>{data.status}</TableCell>
                                     <TableCell className="cursor-pointer">
                                         <div className="flex text-sm md:text-base items-center justify-center m-auto space-x-2">
                                             <img src={View} className="dark:filter dark:brightness-0 dark:invert" />
-                                            <div>
+                                            <div className="mx-4">
                                                 <Dialog>
                                                     <DialogTrigger asChild>
                                                         <p>View</p>
                                                     </DialogTrigger>
-                                                    <DialogContent className="sm:max-w-md">
+                                                    <DialogContent className="max-w-[300px] md:max-w-md">
                                                         <DialogHeader>
                                                             <DialogTitle className="font-medium text-[12px] md:text-base text-[#3A3F51] dark:text-gray-300 flex items-center cursor-pointer hover:font-semibold gap-2 justify-start">
                                                                 <img src={data.image} />
                                                                 {data.name}
                                                             </DialogTitle>
                                                             <DialogDescription>
-                                                                Big time customer and delivers duly.
-                                                                <p className={`text-[12px] md:text-base my-2 font-semibold ${data.status === "Paid" ? "text-green-700" : "text-red-700"}`}>{data.status}</p>
+                                                                Big time customer and delivers duly
                                                             </DialogDescription>
                                                         </DialogHeader>
 

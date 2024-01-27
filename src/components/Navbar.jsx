@@ -116,8 +116,8 @@ const Navbar = () => {
         </div>
 
         {/* Menu Icon Div */}
-        <div className="flex items-center space-x-3 cursor-pointer">
-          <div className="max-h-[40px] cursor-pointer border-[1px] dark:border-gray-300 border-gray-600 rounded-full">
+        <div className="flex md:hidden items-center space-x-3 cursor-pointer">
+          <div className="max-h-[40px]  cursor-pointer border-[1px] dark:border-gray-300 border-gray-600 rounded-full">
             <img
               src={Boy}
               alt="Dashboard"

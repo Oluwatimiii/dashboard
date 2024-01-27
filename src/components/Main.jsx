@@ -68,7 +68,7 @@ const Main = () => {
               <p className="font-semibold text-[#26282C] dark:text-white">Sales Trends</p>
 
               <div className="flex items-center justify-between space-x-4">
-                <p className="text-sm text-medium">Sort by:</p>
+                <p className="text-sm text-medium">Short by:</p>
 
                 <div>
                   <Select>

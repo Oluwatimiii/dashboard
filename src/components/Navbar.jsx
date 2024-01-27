@@ -9,6 +9,7 @@ import Menu from "../assets/fourdots.png"
 import Range from "../assets/range.png"
 import People from "../assets/Icon.png"
 import Box from "../assets/box.png"
+import Boy from "../assets/boy.png"
 import Div from "../assets/divission.png"
 import Caution from "../assets/caution.png"
 import Login from "../assets/login.png"
@@ -37,8 +38,15 @@ const Navbar = () => {
       {/* Logo Div */}
       <div className="flex justify-between items-center w-auto h-full mx-auto px-4 md:px-5 lg:px-6">
         <Link>
-          <div className="flex items-center cursor-pointer">
-            <p className="text-[14px] md:text-[21px] font-semibold font-poppins">Dashboard</p>
+          <div className="flex items-center space-x-2 cursor-pointer">
+            <div className="max-h-[40px] cursor-pointer">
+              <img
+                src={Logo}
+                alt="Geegpay"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="text-[14px] md:text-[24px] font-semibold font-poppins">Dashboard</p>
           </div>
         </Link>
 
@@ -90,8 +98,8 @@ const Navbar = () => {
                       >
                         Online
                       </DropdownMenuCheckboxItem>
-                      
-                      
+
+
                       <DropdownMenuCheckboxItem
                         checked={showPanel}
                         onCheckedChange={setShowPanel}
@@ -108,8 +116,17 @@ const Navbar = () => {
         </div>
 
         {/* Menu Icon Div */}
-        <div className="md:hidden text-darrk dark:text-white" onClick={openNav} >
-          <AiOutlineMenu size={25} />
+        <div className="flex items-center space-x-3 cursor-pointer">
+          <div className="max-h-[40px] cursor-pointer border-[1px] border-gray-300 rounded-full">
+            <img
+              src={Boy}
+              alt="Dashboard"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="md:hidden text-darrk dark:text-white" onClick={openNav} >
+            <AiOutlineMenu size={25} />
+          </div>
         </div>
       </div>
 

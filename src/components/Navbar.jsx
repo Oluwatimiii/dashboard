@@ -34,12 +34,12 @@ const Navbar = () => {
 
 
   return (
-    <div className="fixed overflow-hidden w-full left-0 bg-[#FAFAFA] dark:bg-darrk border-b-[1px] border-[#DADDDD] dark:border-gray-300/20 py-4 z-[10] md:z-[1] md:pl-20">
+    <div className="fixed w-full left-0 bg-[#FAFAFA] dark:bg-darrk border-b-[1px] border-[#DADDDD] dark:border-gray-300/20 py-4 z-[10] md:z-[1] md:pl-20">
       {/* Logo Div */}
       <div className="flex justify-between items-center w-auto h-full mx-auto px-4 md:px-5 lg:px-6">
         <Link>
           <div className="flex items-center space-x-2 cursor-pointer">
-            <div className="max-h-[40px] cursor-pointer">
+            <div className="flex md:hidden max-h-[40px] cursor-pointer">
               <img
                 src={Logo}
                 alt="Geegpay"
@@ -117,7 +117,7 @@ const Navbar = () => {
 
         {/* Menu Icon Div */}
         <div className="flex items-center space-x-3 cursor-pointer">
-          <div className="max-h-[40px] cursor-pointer border-[1px] border-gray-300 rounded-full">
+          <div className="max-h-[40px] cursor-pointer border-[1px] dark:border-gray-300 border-gray-600 rounded-full">
             <img
               src={Boy}
               alt="Dashboard"
@@ -135,7 +135,7 @@ const Navbar = () => {
         <div
           className={
             mobileNav
-              ? " fixed left-0 top-0 w-[100%] h-screen bg-[#0D0D2B] z-[1000] p-4 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[100%] min-h-screen bg-[#0D0D2B] z-[1000] p-4 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-4 ease-in duration-500"
           }
         >

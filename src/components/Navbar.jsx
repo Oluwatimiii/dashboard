@@ -29,7 +29,7 @@ const Navbar = () => {
   };
 
   const navStyle = mobileNav
-    ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80"
+    ? "md:hidden fixed left-0 top-0 w-full min-h-screen bg-black/80"
     : "";
 
 
@@ -167,7 +167,7 @@ const Navbar = () => {
                 <Example />
               </div>
 
-              <ul className="space-y-[2px] text-center">
+              <ul className="space-y-[2px] text-center mt-6">
                 <li className="">
                   <Link>
                     <div className="flex items-center gap-2 cursor-pointer text-white">

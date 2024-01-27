@@ -13,7 +13,6 @@ import TableBox from "./TableBox";
 import TableComponent from "./TableComponent";
 import TableSide from "./TableSide";
 import { ScrollArea, ScrollBar } from "./ui/scroll-area";
-import Search from "../assets/Seacrh.png"
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 
@@ -68,7 +67,7 @@ const Main = () => {
               <p className="font-semibold text-[#26282C] dark:text-white">Sales Trends</p>
 
               <div className="flex items-center justify-between space-x-4">
-                <p className="text-sm text-medium">Short by:</p>
+                <p className="text-sm text-medium">Sort by:</p>
 
                 <div>
                   <Select>

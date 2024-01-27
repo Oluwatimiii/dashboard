@@ -114,7 +114,7 @@ const Main = () => {
 
               {/* Table */}
               <div className="bg-white dark:bg-black">
-                <ScrollArea className="w-96 whitespace-nowrap md:h-full md:w-full">
+                <ScrollArea className="max-w-full whitespace-nowrap md:h-full sm:w-full">
                   <TableComponent />
                   <ScrollBar orientation="horizontal" />
                 </ScrollArea>

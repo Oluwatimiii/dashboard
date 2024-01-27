@@ -10,9 +10,8 @@ const Example = () => {
   const [selected, setSelected] = useState("light");
   return (
     <div
-      className={`grid h-auto place-content-center px-4 py-1 border-[1px] border-[#B2ABAB] rounded-full my-4 md:my-0 transition-colors ${
-        selected === "light" ? "bg-white" : "bg-darrk"
-      }`}
+      className={`grid h-auto place-content-center px-4 py-1 border-[1px] border-[#B2ABAB] rounded-full my-4 md:my-0 transition-colors ${selected === "light" ? "bg-white" : "bg-darrk"
+        }`}
     >
       <SliderToggle selected={selected} setSelected={setSelected} />
     </div>
@@ -24,32 +23,30 @@ const SliderToggle = ({ selected, setSelected }) => {
 
   return (
     <div className="relative flex w-fit items-center rounded-full">
+
       <button
-        className={`${TOGGLE_CLASSES} ${
-          selected === "light" ? "text-white" : "text-slate-300"
-        }`}
+        className={`${TOGGLE_CLASSES} ${selected === "light" ? "text-white" : "text-[#B2ABAB]"
+          }`}
         onClick={() => {
           setSelected("light")
-          setTheme("light");
-        }}
-      >
-        <FiMoon className="relative z-10 text-lg md:text-sm" />
-      </button>
-      <button
-        className={`${TOGGLE_CLASSES} ${
-          selected === "dark" ? "text-white" : "text-slate-800"
-        }`}
-        onClick={() => {
-          setSelected("dark")
-          setTheme("dark")
+          setTheme("light")
         }}
       >
         <FiSun className="relative z-10 text-lg md:text-sm" />
       </button>
+      <button
+        className={`${TOGGLE_CLASSES} ${selected === "dark" ? "text-white" : "text-[#B2ABAB]"
+          }`}
+        onClick={() => {
+          setSelected("dark")
+          setTheme("dark");
+        }}
+      >
+        <FiMoon className="relative z-10 text-lg md:text-sm" />
+      </button>
       <div
-        className={`absolute inset-0 z-0 flex ${
-          selected === "dark" ? "justify-end" : "justify-start"
-        }`}
+        className={`absolute inset-0 z-0 flex ${selected === "dark" ? "justify-end" : "justify-start"
+          }`}
       >
         <motion.span
           layout
